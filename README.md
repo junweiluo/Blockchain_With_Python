@@ -1,8 +1,18 @@
 # Blockchain_With_Python
 
-What is an HD Wallet?
+# What is an HD Wallet?
 
 An HD Wallet, or Hierachical Deterministic wallet, is a new-age digital wallet that automaticvally generates a hierarchical tree-like structure of private/public address or keys, thereby addressing the problem of the user having to generate them on their own.
+
+# Derive a HD Wallet
+
+This is in wallet.py of function 'derive_wallet':
+
+command = f'./derive -g --mnemonic="{mnemonic}" --coin="{coin}" --numderive="{num}" --cols=index,path,address,privkey,pubkey,pubkeyhash,xprv,xpub --format=json'
+
+There will be 8 fiels in each derive. 
+
+# Exectuting from terminal to send transactions using commends below.
 
 from wallet import *
 
